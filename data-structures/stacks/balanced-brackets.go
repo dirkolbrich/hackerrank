@@ -18,7 +18,7 @@ func main() {
 				break
 			} else {
 				last := string(stack[len(stack)-1]) // last of stack
-				y := last + x // combine
+				y := last + x                       // combine
 				if y == "()" || y == "{}" || y == "[]" {
 					stack = stack[:len(stack)-1]
 				}
